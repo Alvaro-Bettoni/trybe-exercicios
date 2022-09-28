@@ -55,11 +55,19 @@
     let corrigeTag = document.getElementsByTagName('h1')[0];
     corrigeTag = corrigeTag.innerText = "Exercício - Javascript";
     let upperCase = document.getElementsByTagName('p')[0].style.textTransform = "uppercase";
-    for (i = 0; i < document.getElementsByTagName('p').length; i += 1) {
+    let aux = document.getElementsByTagName('p');
+
+    for (i = 0; i < aux.length; i += 1) {
+      console.log(aux[i]);
+    }
+
+
+
+    /* for (i = 0; i < document.getElementsByTagName('p').length; i += 1) {
       let exibeP = document.getElementById('p')[i];
       console.log(exibeP[i]);
     }
-
+*/
     /*
   Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
   - document.getElementById()
